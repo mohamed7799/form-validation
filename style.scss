@@ -125,6 +125,10 @@ button {
   background-position-y: 50%;
 }
 
+input:focus {
+  outline: none;
+}
+
 //media
 @media screen and (max-width: 800px) {
   main {

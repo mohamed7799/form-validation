@@ -134,6 +134,10 @@ button {
   background-position-y: 50%;
 }
 
+input:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 800px) {
   main {
     -webkit-box-orient: vertical;
