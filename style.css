@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./imgs/bg-intro-desktop.png"), -webkit-gradient(linear, left top, left bottom, from(#ff7a7a), to(#ff7a7a));
+  background-image: url("./imgs/bg-intro-desktop.png"), linear-gradient(#ff7a7a, #ff7a7a);
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.form-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.form-container h2 {
+  background-color: #6055a5;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+}
+
+form {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+}
+
+form > p {
+  text-align: center;
+  margin: 1rem 0rem;
+  font-weight: bold;
+  color: #b9b6d3;
+  font-size: 0.6rem;
+}
+
+form > p span {
+  color: #ff7a7a;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  display: none;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+button {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  background-color: #38cc8c;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  -webkit-box-shadow: 0px 3px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 3px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 5rem auto;
+  }
+  .text {
+    text-align: center;
+  }
+}

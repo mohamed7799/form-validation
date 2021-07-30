@@ -1,0 +1,121 @@
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+$Blue: hsl(248, 32%, 49%);
+
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
+//reset
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./imgs/bg-intro-desktop.png"),
+    linear-gradient($Red, $Red);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.text {
+  flex: 1;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.form-container {
+  flex: 1;
+  & h2 {
+    background-color: $Blue;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+  }
+}
+
+form {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0px 6px rgba(0, 0, 0, 0.24);
+  & > p {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-weight: bold;
+    color: $Grayish-Blue;
+    font-size: 0.6rem;
+    & span {
+      color: $Red;
+    }
+  }
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  display: none;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+button {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  background-color: $Green;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.24);
+}
+
+//media
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
