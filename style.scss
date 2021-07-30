@@ -85,9 +85,12 @@ input {
 
 label {
   margin-top: 0.5rem;
-  display: none;
   text-align: right;
   font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+  color: $Red;
 }
 
 button {
@@ -105,6 +108,21 @@ button {
   cursor: pointer;
   color: white;
   box-shadow: 0px 3px rgba(0, 0, 0, 0.24);
+}
+
+.red--border {
+  border: 2px solid $Red;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-icon {
+  background-image: url("./imgs/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
 }
 
 //media

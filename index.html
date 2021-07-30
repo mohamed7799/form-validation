@@ -26,15 +26,26 @@
       </section>
       <section class="form-container">
         <h2><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
-        <form action="">
+        <form id="form-js" action="">
           <input placeholder="First Name" name="First_name" type="text" />
-          <label for="First_name">this is a test for label</label>
+          <label class="hidden" for="First_name"
+            >The first name field is empty</label
+          >
           <input placeholder="Last Name" name="Last_name" type="text" />
-          <label for="Last_name">this is a test for label</label>
-          <input placeholder="Email Address" name="email" type="email" />
-          <label for="email">this is a test for label</label>
+          <label class="hidden" for="Last_name"
+            >The last name field is empty</label
+          >
+          <input
+            id="email-js"
+            placeholder="Email Address"
+            name="email"
+            type="text"
+          />
+          <label class="hidden" for="email">This is not an email</label>
           <input placeholder="Password" name="password" type="password" />
-          <label for="password">this is a test for label</label>
+          <label class="hidden" for="password"
+            >The password field is empty</label
+          >
           <button type="submit">Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our
